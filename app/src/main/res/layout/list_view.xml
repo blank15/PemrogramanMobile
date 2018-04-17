@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="8dp"
+    >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <ImageView
+           android:layout_width="80dp"
+           android:layout_height="100dp"
+           android:id="@+id/image"
+           android:background="@drawable/mad"/>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:paddingLeft="16dp"
+           android:orientation="vertical">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_weight="3"
+                   android:layout_height="wrap_content"
+                   android:text="TITLE"
+                   android:textSize="18sp"
+                   android:textColor="@android:color/black"
+                   android:id="@+id/textTitle"/>
+
+               <TextView
+
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:layout_height="wrap_content"
+                   android:text="YEAR"
+                   android:layout_marginEnd="8dp"
+                   android:textColor="@android:color/black"
+                   android:textAlignment="textEnd"
+                   android:id="@+id/textYear"/>
+           </LinearLayout>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Genre"
+               android:id="@+id/textGenre"/>
+
+           <TextView
+               android:id="@+id/textRating"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="4.5/5"
+               android:textColor="@android:color/holo_orange_dark" />
+       </LinearLayout>
+   </LinearLayout>
+</android.support.v7.widget.CardView>

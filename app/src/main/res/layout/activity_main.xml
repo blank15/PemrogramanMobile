@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="18dp"
+    tools:context="yudistirosaputro.gmail.com.pertemuan4.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yudistiro Septian Dwi Saputro"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckBoxClick"
+        android:layout_margin="8dp"
+        android:text="Text di Bold" />
+
+
+    <CheckBox
+        android:id="@+id/checkBoxItalic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckBoxClick"
+        android:layout_margin="8dp"
+        android:text="Text di Italic" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ubah Warna latar : "
+        android:textColor="@android:color/black"
+        android:layout_margin="8dp"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onSetRadio"
+        android:id="@+id/radioGrup">
+
+        <RadioButton
+            android:id="@+id/radioButtonBiru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onSetRadio"
+            android:text="Biru" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMerah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:onClick="onSetRadio"
+            android:layout_weight="1"
+            android:text="Merah" />
+
+        <RadioButton
+            android:id="@+id/radioButtonHijau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onSetRadio"
+            android:layout_weight="1"
+            android:text="Hijau" />
+
+        <RadioButton
+            android:id="@+id/radioButtonKuning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onSetRadio"
+            android:text="Kuning" />
+    </RadioGroup>
+
+</LinearLayout>
